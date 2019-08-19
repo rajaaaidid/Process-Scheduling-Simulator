@@ -1,0 +1,3 @@
+D:/Aidid/CLionProjects/ProcessSimulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir
+D:/Aidid/CLionProjects/ProcessSimulator/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Aidid/CLionProjects/ProcessSimulator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
