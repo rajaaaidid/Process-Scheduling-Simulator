@@ -6,53 +6,25 @@
 
 #IncludeRegexTransform: 
 
-D:/Aidid/CLionProjects/ProcessSimulator/headers/Interface.h
+C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/Process.h
 string
 -
-vector
--
 
-D:/Aidid/CLionProjects/ProcessSimulator/headers/ProcessSet.h
+C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/ProcessSet.h
 Process.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/Process.h
+C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/Process.h
 deque
 -
 
-D:/Aidid/CLionProjects/ProcessSimulator/headers/algorithm/FCFS_Priority.h
+C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/algorithm/TLQ.h
 ../ProcessSet.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/ProcessSet.h
+C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/ProcessSet.h
 
-D:/Aidid/CLionProjects/ProcessSimulator/headers/algorithm/RR_Priority.h
-../ProcessSet.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/ProcessSet.h
-
-D:/Aidid/CLionProjects/ProcessSimulator/headers/algorithm/SRTN.h
-../ProcessSet.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/ProcessSet.h
-
-D:/Aidid/CLionProjects/ProcessSimulator/headers/algorithm/TLQ.h
-../ProcessSet.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/ProcessSet.h
-
-D:/Aidid/CLionProjects/ProcessSimulator/main.cpp
+C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/sources/algorithm/TLQ.cpp
+../../headers/algorithm/TLQ.h
+C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/algorithm/TLQ.h
 iostream
 -
-string
--
-headers/Interface.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/Interface.h
-headers/algorithm/FCFS_Priority.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/algorithm/FCFS_Priority.h
-headers/algorithm/RR_Priority.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/algorithm/RR_Priority.h
-headers/algorithm/SRTN.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/algorithm/SRTN.h
-headers/algorithm/TLQ.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/algorithm/TLQ.h
-Process.h
-D:/Aidid/CLionProjects/ProcessSimulator/Process.h
-headers/ProcessSet.h
-D:/Aidid/CLionProjects/ProcessSimulator/headers/ProcessSet.h
-deque
+sstream
 -
 
