@@ -319,12 +319,25 @@ void ProcessSet::printProcessTable(){
 }
 
 void ProcessSet::printProcessTable(int type){
-    printf("\n%-15s%-15s%-15s%-15s%-15s\n", "Process Name", "Burst Time", "Arrival Time", "Priority","Finish Time");
+    double totalTurnaroundTime = 0;
+    double totalWaitingTime = 0;
+
+    printf("\n\n%-15s%-15s%-15s%-15s%-20s%-20s\n", "Process Name","Arrival Time", "Finish Time", "Burst Time", "Turnaround Time","Waiting Time");
     for(int i=0; i<ProcessSet::getAllPassive().size(); i++){
         string name = ProcessSet::getAllPassive()[i].getName();
-        string format = "%-15s%-15d%-15d%-15d%-15d\n";
-        printf(format.c_str(), ProcessSet::getAllPassive()[i].getName().c_str(), ProcessSet::getAllPassive()[i].getBurstTime(), ProcessSet::getAllPassive()[i].getArrivalTime(), ProcessSet::getAllPassive()[i].getPriority(), ProcessSet::getAllPassive()[i].getFinishInterval());
+        string format = "%-15s%-15d%-15d%-15d%-20d%-20d\n";
+
+        int turnaroundTime = ProcessSet::getAllPassive()[i].getFinishInterval()-ProcessSet::getAllPassive()[i].getArrivalTime();
+        int burstTime = ProcessSet::getAllPassive()[i].getExecutedTime()+ProcessSet::getAllPassive()[i].getBurstTime();
+        int waitingTime = turnaroundTime-burstTime;
+        totalTurnaroundTime += turnaroundTime;
+        totalWaitingTime += waitingTime;
+
+        printf(format.c_str(), ProcessSet::getAllPassive()[i].getName().c_str(), ProcessSet::getAllPassive()[i].getArrivalTime(), ProcessSet::getAllPassive()[i].getFinishInterval(), burstTime, turnaroundTime, waitingTime);
     }
+
+    cout<<"Average Turnaround Time: "<<totalTurnaroundTime/ProcessSet::getAllPassive().size()<<endl;
+    cout<<"Average Waiting Time: "<<totalWaitingTime/ProcessSet::getAllPassive().size()<<endl;
 }
 
 

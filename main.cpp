@@ -12,6 +12,7 @@ const bool ON_FCFS_P = true;      //SET TRUE TO ENABLE "First Come First Serve w
 const bool ON_RR_P = true;        //SET TRUE TO ENABLE "Round Robin with Priority"
 const bool ON_TLQ = true;      //SET TRUE TO ENABLE "Three Level Queue"
 const bool ON_SRTN = true;      //SET TRUE TO ENABLE "Shortest Remaining Time Next"
+const bool CALCULATION = true;  //SET TRUE TO ENABLE PRINTING OF TURNAROUND TIME AND WAITING TIME
 
 int main()
 {
@@ -50,26 +51,42 @@ int main()
     }
 
     if(ON_FCFS_P){
-        cout<<endl<<"============ FCFS(Priority) ============"<<endl;
-        FCFS_Priority fcfsInstance(ps);
-        cout<<endl<<"============ FCFS(Priority) ============"<<endl;
+        cout<<endl<<"============ FCFS(Priority) ======================================================================"<<endl;
+        if(CALCULATION){
+            FCFS_Priority fcfsInstance(ps, 1);
+        }else{
+            FCFS_Priority fcfsInstance(ps, 0);
+        }
+        cout<<endl<<"============ FCFS(Priority) ======================================================================"<<endl;
     }
 
     if(ON_RR_P){
-        cout<<endl<<"============ RoundRobin(Priority) ============"<<endl;
-        RR_Priority rrInstance(ps, 2);
-        cout<<endl<<"============ RoundRobin(Priority) ============"<<endl;
+        cout<<endl<<"============ RoundRobin(Priority) ================================================================"<<endl;
+        if(CALCULATION){
+            RR_Priority rrInstance(ps, 2, 1);
+        }else{
+            RR_Priority rrInstance(ps, 2, 0);
+        }
+        cout<<endl<<"============ RoundRobin(Priority) ================================================================"<<endl;
     }
 
     if(ON_TLQ){
-        cout<<endl<<"============ 3 Level Queue ============"<<endl;
-        TLQ tlqInstance(ps);
-        cout<<endl<<"============ 3 Level Queue ============"<<endl;
+        cout<<endl<<"============ 3 Level Queue ======================================================================="<<endl;
+        if(CALCULATION){
+            TLQ tlqInstance(ps, 1);
+        }else{
+            TLQ tlqInstance(ps, 0);
+        }
+        cout<<endl<<"============ 3 Level Queue ======================================================================="<<endl;
     }
 
     if(ON_SRTN){
-        cout<<endl<<"============ SRTN ============"<<endl;
-        SRTN srtnInstance(ps);
-        cout<<endl<<"============ SRTN ============"<<endl;
+        cout<<endl<<"============ SRTN ================================================================================"<<endl;
+        if(CALCULATION){
+            SRTN srtnInstance(ps, 1);
+        }else{
+            SRTN srtnInstance(ps, 0);
+        }
+        cout<<endl<<"============ SRTN ================================================================================"<<endl;
     }
 }

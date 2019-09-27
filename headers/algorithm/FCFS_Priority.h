@@ -9,7 +9,7 @@
 class FCFS_Priority
 {
 public:
-    FCFS_Priority(ProcessSet processes);
+    FCFS_Priority(ProcessSet processes, int enableCalculation);
 
 protected:
 

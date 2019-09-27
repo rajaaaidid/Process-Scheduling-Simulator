@@ -7,7 +7,7 @@
 #include <sstream>
 using namespace std;
 
-TLQ::TLQ(ProcessSet processes)
+TLQ::TLQ(ProcessSet processes, int enableCalculation)
 {
     int quantum = 2;
     int minimumArrival = processes.findMinimumArrival();
@@ -119,7 +119,7 @@ TLQ::TLQ(ProcessSet processes)
             }
 
             //Feed running process
-            queue1.feedRunning(1);
+            queue1.feedRunning(1,i+1);
             //Make currently running to previous running for next iteration
             previousRunning = running1;
             previousQueue = queueToRun;
@@ -172,7 +172,7 @@ TLQ::TLQ(ProcessSet processes)
             }
 
             //Feed running process
-            queue2.feedRunning(1);
+            queue2.feedRunning(1,i+1);
             //Make currently running to previous running for next iteration
             previousRunning = running2;
             previousQueue = queueToRun;
@@ -225,7 +225,7 @@ TLQ::TLQ(ProcessSet processes)
             }
 
             //Feed running process
-            queue3.feedRunning(1);
+            queue3.feedRunning(1,i+1);
             //Make currently running to previous running for next iteration
             previousRunning = running3;
             previousQueue = queueToRun;
@@ -236,4 +236,19 @@ TLQ::TLQ(ProcessSet processes)
     cout<<"Queue 1: "<<queue1Stream.str()<<endl;
     cout<<"Queue 2: "<<queue2Stream.str()<<endl;
     cout<<"Queue 3: "<<queue3Stream.str();
+
+    processes.clearAll();
+    for(int i=0; i<queue1.getAllPassive().size(); i++){
+        processes.addToProcesses(queue1.getAllPassive()[i]);
+    }
+    for(int i=0; i<queue2.getAllPassive().size(); i++){
+        processes.addToProcesses(queue2.getAllPassive()[i]);
+    }
+    for(int i=0; i<queue3.getAllPassive().size(); i++){
+        processes.addToProcesses(queue3.getAllPassive()[i]);
+    }
+
+    if(enableCalculation){
+        processes.printProcessTable(1);
+    }
 }

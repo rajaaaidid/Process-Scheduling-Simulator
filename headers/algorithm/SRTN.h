@@ -9,7 +9,7 @@
 class SRTN
 {
 public:
-    SRTN(ProcessSet processes);
+    SRTN(ProcessSet processes, int enableCalculation);
 
 protected:
 

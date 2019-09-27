@@ -5,7 +5,7 @@
 #include "../../headers/algorithm/RR_Priority.h"
 #include <iostream>
 
-RR_Priority::RR_Priority(ProcessSet processes, int quantum)
+RR_Priority::RR_Priority(ProcessSet processes, int quantum, int enableCalculation)
 {
     //Initialize variables
     int minimumArrival = processes.findMinimumArrival();
@@ -64,8 +64,12 @@ RR_Priority::RR_Priority(ProcessSet processes, int quantum)
         }
 
         //Feed running process
-        processes.feedRunning(1);
+        processes.feedRunning(1,i+1);
         //Make currently running to previous running for next iteration
         previousRunning = running;
+    }
+
+    if(enableCalculation){
+        processes.printProcessTable(1);
     }
 }

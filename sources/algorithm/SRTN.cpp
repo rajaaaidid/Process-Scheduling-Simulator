@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 
-SRTN::SRTN(ProcessSet processes)
+SRTN::SRTN(ProcessSet processes, int enableCalculation)
 {
     //Initialize variables
     int minimumArrival = processes.findMinimumArrival();
@@ -74,8 +74,12 @@ SRTN::SRTN(ProcessSet processes)
         }
 
         //Feed running process
-        processes.feedRunning(1);
+        processes.feedRunning(1,i+1);
         //Make currently running to previous running for next iteration
         previousRunning = running;
+    }
+
+    if(enableCalculation){
+        processes.printProcessTable(1);
     }
 }

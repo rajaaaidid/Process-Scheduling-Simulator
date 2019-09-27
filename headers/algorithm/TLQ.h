@@ -9,7 +9,7 @@
 class TLQ
 {
 public:
-    TLQ(ProcessSet processes);
+    TLQ(ProcessSet processes, int enableCalculation);
 
 protected:
 

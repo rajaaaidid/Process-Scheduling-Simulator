@@ -9,7 +9,7 @@
 class RR_Priority
 {
 public:
-    RR_Priority(ProcessSet processes, int quantum);
+    RR_Priority(ProcessSet processes, int quantum, int enableCalculation);
 
 protected:
 
