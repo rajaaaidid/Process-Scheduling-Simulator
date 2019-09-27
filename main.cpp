@@ -7,11 +7,11 @@
 
 using namespace std;
 
-const bool MANUAL_DATA = false;  //SET TRUE TO ENABLE MANUAL DATA ENTRY
-const bool ON_FCFS_P = false;      //SET TRUE TO ENABLE "First Come First Serve with Priority"
-const bool ON_RR_P = false;        //SET TRUE TO ENABLE "Round Robin with Priority"
+const bool MANUAL_DATA = true;  //SET TRUE TO ENABLE MANUAL DATA ENTRY
+const bool ON_FCFS_P = true;      //SET TRUE TO ENABLE "First Come First Serve with Priority"
+const bool ON_RR_P = true;        //SET TRUE TO ENABLE "Round Robin with Priority"
 const bool ON_TLQ = true;      //SET TRUE TO ENABLE "Three Level Queue"
-const bool ON_SRTN = false;      //SET TRUE TO ENABLE "Shortest Remaining Time Next"
+const bool ON_SRTN = true;      //SET TRUE TO ENABLE "Shortest Remaining Time Next"
 
 int main()
 {
@@ -29,6 +29,8 @@ int main()
             newProcess.setPriority(core.getPriority()[i]);
             ps.addToProcesses(newProcess);
         }
+
+        ps.printProcessTable();
     }else{
         ps.clearAll();
         Process p0("P0",6,0,3,0);
@@ -43,6 +45,8 @@ int main()
         ps.addToProcesses(p3);
         ps.addToProcesses(p4);
         ps.addToProcesses(p5);
+
+        ps.printProcessTable();
     }
 
     if(ON_FCFS_P){

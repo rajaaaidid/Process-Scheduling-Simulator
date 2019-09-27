@@ -12,7 +12,7 @@ FCFS_Priority::FCFS_Priority(ProcessSet processes)
 {
     //Initialize variables
     int minimumArrival = processes.findMinimumArrival();
-    int totalBurstTime = processes.findTotalBurstTime();
+    int totalBurstTime = minimumArrival+processes.findTotalBurstTime();
     Process previousRunning("N",0,0,0,0);
     Process running("N",0,0,0,0);
 

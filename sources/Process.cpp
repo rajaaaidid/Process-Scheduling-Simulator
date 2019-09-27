@@ -40,6 +40,10 @@ void Process::setExecutedTime(int executedTime){
     Process::executedTime = executedTime;
 }
 
+void Process::setFinishInterval(int finishInterval){
+    Process::finishInterval = finishInterval;
+}
+
 string Process::getName(){
     return Process::name;
 }
@@ -58,6 +62,10 @@ int Process::getPriority(){
 
 int Process::getExecutedTime(){
     return Process::executedTime;
+}
+
+int Process::getFinishInterval(){
+    return Process::finishInterval;
 }
 
 bool Process::equals(Process p){

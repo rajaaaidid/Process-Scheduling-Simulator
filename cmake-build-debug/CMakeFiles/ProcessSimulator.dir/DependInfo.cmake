@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/main.cpp" "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/main.cpp.obj"
-  "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/sources/Interface.cpp" "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/Interface.cpp.obj"
-  "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/sources/Process.cpp" "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/Process.cpp.obj"
-  "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/sources/ProcessSet.cpp" "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/ProcessSet.cpp.obj"
-  "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/sources/algorithm/FCFS_Priority.cpp" "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/algorithm/FCFS_Priority.cpp.obj"
-  "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/sources/algorithm/RR_Priority.cpp" "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/algorithm/RR_Priority.cpp.obj"
-  "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/sources/algorithm/SRTN.cpp" "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/algorithm/SRTN.cpp.obj"
-  "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/sources/algorithm/TLQ.cpp" "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/algorithm/TLQ.cpp.obj"
+  "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/main.cpp" "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/main.cpp.obj"
+  "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/sources/Interface.cpp" "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/Interface.cpp.obj"
+  "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/sources/Process.cpp" "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/Process.cpp.obj"
+  "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/sources/ProcessSet.cpp" "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/ProcessSet.cpp.obj"
+  "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/sources/algorithm/FCFS_Priority.cpp" "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/algorithm/FCFS_Priority.cpp.obj"
+  "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/sources/algorithm/RR_Priority.cpp" "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/algorithm/RR_Priority.cpp.obj"
+  "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/sources/algorithm/SRTN.cpp" "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/algorithm/SRTN.cpp.obj"
+  "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/sources/algorithm/TLQ.cpp" "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/cmake-build-debug/CMakeFiles/ProcessSimulator.dir/sources/algorithm/TLQ.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

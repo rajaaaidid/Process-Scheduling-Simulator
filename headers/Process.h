@@ -18,11 +18,13 @@ public:
     void setArrivalTime(int arrivalTime);
     void setPriority(int priority);
     void setExecutedTime(int executedTime);
+    void setFinishInterval(int finishInterval);
     string getName();
     int getBurstTime();
     int getArrivalTime();
     int getPriority();
     int getExecutedTime();
+    int getFinishInterval();
     bool equals(Process p);
 protected:
 
@@ -32,6 +34,7 @@ private:
     int arrivalTime;
     int priority;
     int executedTime = 0;
+    int finishInterval;
 };
 
 #endif //PROCESSSIMULATOR_PROCESS_H

@@ -19,6 +19,7 @@ public:
     void setRunning(Process p);
     void setRunning(int index);
     void feedRunning(int time);
+    void feedRunning(int time, int interval);
     bool inPassiveState(Process p);
     bool inReadyState(Process p);
     bool isRunning(Process p);
@@ -39,6 +40,8 @@ public:
     deque<Process> findHighestBurstTime(deque<Process> p);
     deque<Process> findLowestExecutedTime(deque<Process> p);
     deque<Process> findHighestExecutedTime(deque<Process> p);
+    void printProcessTable();
+    void printProcessTable(int type);
 protected:
 
 private:

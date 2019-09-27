@@ -6,25 +6,49 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/Process.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/Interface.h
+string
+-
+vector
+-
+
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/Process.h
 string
 -
 
-C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/ProcessSet.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/ProcessSet.h
 Process.h
-C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/Process.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/Process.h
 deque
 -
 
-C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/algorithm/TLQ.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/algorithm/FCFS_Priority.h
 ../ProcessSet.h
-C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/ProcessSet.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/ProcessSet.h
 
-C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/sources/algorithm/TLQ.cpp
-../../headers/algorithm/TLQ.h
-C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/headers/algorithm/TLQ.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/algorithm/RR_Priority.h
+../ProcessSet.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/ProcessSet.h
+
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/algorithm/SRTN.h
+../ProcessSet.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/ProcessSet.h
+
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/algorithm/TLQ.h
+../ProcessSet.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/ProcessSet.h
+
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/main.cpp
 iostream
 -
-sstream
--
+headers/Interface.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/Interface.h
+headers/algorithm/FCFS_Priority.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/algorithm/FCFS_Priority.h
+headers/algorithm/RR_Priority.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/algorithm/RR_Priority.h
+headers/algorithm/SRTN.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/algorithm/SRTN.h
+headers/algorithm/TLQ.h
+D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/headers/algorithm/TLQ.h
 

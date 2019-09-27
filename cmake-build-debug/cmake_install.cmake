@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator
+# Install script for directory: D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Aznida/Documents/Aidid/Process-Scheduling-Simulator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "D:/Aidid/Documents/Jetbrains/CLion/ProcessSimulator/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

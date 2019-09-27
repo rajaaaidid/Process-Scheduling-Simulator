@@ -68,6 +68,19 @@ void ProcessSet::feedRunning(int time){
     }
 }
 
+void ProcessSet::feedRunning(int time, int interval){
+    if(isRunning(running)){
+        ProcessSet::running.setBurstTime(ProcessSet::running.getBurstTime()-time);
+        ProcessSet::running.setExecutedTime(ProcessSet::running.getExecutedTime()+time);
+        if(ProcessSet::running.getBurstTime()==0){
+            ProcessSet::running.setFinishInterval(interval);
+            ProcessSet::processes.push_back(ProcessSet::running);
+            Process p("No Process",0,0,0,0);
+            ProcessSet::running = p;
+        }
+    }
+}
+
 bool ProcessSet::inPassiveState(Process p){
     for(int i=0; i<processes.size(); i++){
         if(p.equals(ProcessSet::processes[i])){
@@ -294,6 +307,24 @@ void ProcessSet::printAll(){
     }
     cout<<"Running State"<<endl;
     cout<<running.getName()<<" "<<running.getBurstTime()<<" "<<running.getArrivalTime()<<" "<<running.getPriority()<<" "<<running.getExecutedTime()<<endl;
+}
+
+void ProcessSet::printProcessTable(){
+    printf("\n%-15s%-15s%-15s%-15s\n", "Process Name", "Burst Time", "Arrival Time", "Priority");
+    for(int i=0; i<ProcessSet::getAllPassive().size(); i++){
+        string name = ProcessSet::getAllPassive()[i].getName();
+        string format = "%-15s%-15d%-15d%-15d\n";
+        printf(format.c_str(), ProcessSet::getAllPassive()[i].getName().c_str(), ProcessSet::getAllPassive()[i].getBurstTime(), ProcessSet::getAllPassive()[i].getArrivalTime(), ProcessSet::getAllPassive()[i].getPriority());
+    }
+}
+
+void ProcessSet::printProcessTable(int type){
+    printf("\n%-15s%-15s%-15s%-15s%-15s\n", "Process Name", "Burst Time", "Arrival Time", "Priority","Finish Time");
+    for(int i=0; i<ProcessSet::getAllPassive().size(); i++){
+        string name = ProcessSet::getAllPassive()[i].getName();
+        string format = "%-15s%-15d%-15d%-15d%-15d\n";
+        printf(format.c_str(), ProcessSet::getAllPassive()[i].getName().c_str(), ProcessSet::getAllPassive()[i].getBurstTime(), ProcessSet::getAllPassive()[i].getArrivalTime(), ProcessSet::getAllPassive()[i].getPriority(), ProcessSet::getAllPassive()[i].getFinishInterval());
+    }
 }
 
 
