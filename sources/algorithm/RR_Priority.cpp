@@ -43,6 +43,10 @@ RR_Priority::RR_Priority(ProcessSet processes, int quantum, int enableCalculatio
                 if(temp.size()==0){
                     temp.push_back(processes.getRunning());
                 }
+                if(processes.getRunning().getPriority()<temp[0].getPriority()&&(processes.getRunning().getName()!="No Process")){
+                    temp.clear();
+                    temp.push_back(processes.getRunning());
+                }
             }else{
                 temp.push_back(processes.getRunning());
             }

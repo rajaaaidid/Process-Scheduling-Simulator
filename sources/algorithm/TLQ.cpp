@@ -79,8 +79,8 @@ TLQ::TLQ(ProcessSet processes, int enableCalculation)
             deque<Process> temp;
             if(i!=minimumArrival){
                 if(queue1.getRunning().getExecutedTime()%quantum==0){
-                    temp = queue1.findLowestPriority(queue1.getAllReady());
-                    temp = queue1.findLowestExecutedTime(temp);
+                    temp = queue1.findLowestExecutedTime(queue1.getAllReady());
+                    temp = queue1.findLowestPriority(temp);
                     temp = queue1.findLowestArrivalTime(temp);
                     temp = queue1.findLowestBurstTime(temp);
                     if(temp.size()==0){
@@ -90,8 +90,8 @@ TLQ::TLQ(ProcessSet processes, int enableCalculation)
                     temp.push_back(queue1.getRunning());
                 }
             }else{
-                temp = queue1.findLowestPriority(queue1.getAllReady());
-                temp = queue1.findLowestExecutedTime(temp);
+                temp = queue1.findLowestExecutedTime(queue1.getAllReady());
+                temp = queue1.findLowestPriority(temp);
                 temp = queue1.findLowestArrivalTime(temp);
                 temp = queue1.findLowestBurstTime(temp);
             }
